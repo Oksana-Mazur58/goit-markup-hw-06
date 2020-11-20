@@ -333,20 +333,35 @@
     <div class="modal">
       <button class="modal-svg" data-modal-close>
         </button>
-    <p>Оставьте свои данные, мы вам перезвоним</p>
-    <form>
-      <label for="name">Имя</label>
-      <input type="text" name="uzer-name" id="name">
-      <label for="tel">Телефон</label>
+    <p class="form-title subject">Оставьте свои данные, мы вам перезвоним</p>
+    <form class="form">
+      <div class="form-group">
+        <label for="name">Имя</label>
+        <input type="text" name="uzer-name" id="name">
+      </div>
+      
+     <div class="form-group">
+       <label for="tel">Телефон</label>
       <input type="tel" name="tel" id="tel">
-      <label for="mail">Почта</label>
-      <input type="email" name="mail" id="mail">
-      <label for="textarea">Комментарий</label>
-      <textarea name="message" id="textarea" cols="30" rows="5" placeholder="Введите текст" ></textarea>
+    </div>
+
+      <div class="form-group">
+        <label for="email">Почта</label>
+      <input type="email" name="mail" id="email">
+     </div>
+      <div class="form-group form-coment">
+        <label for="textarea">Комментарий</label>
+      <textarea name="message" id="textarea" cols="30" rows="5" placeholder="Введите текст"></textarea>
+      </div>
+
+      <div class="form-group conditions">
       <input type="checkbox" name="" value="" id="">
       <label for="">Соглашаюсь с рассылкой и принимаю </label>
       <a href="">Условия договора</a>
-      <button type="submit">Отправить</button>
+    </div>
+    <div class="form-button" >
+      <button class="hiro-botton" type="submit">Отправить</button>
+      </div>
     </form>
     </div>
     </div>
