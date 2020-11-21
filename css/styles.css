@@ -567,7 +567,7 @@ margin-bottom: 0;
   fill: #afb1b8;
   background-color: rgba(255, 255, 255, 0.1);
   transition-duration:  var(--time-duration);
-  transition-timing-function: var(--timing-function); ;;
+  transition-timing-function: var(--timing-function);
 }
 .social-icon-footer{
   width: 20px;
@@ -615,15 +615,10 @@ text-transform: uppercase;
   margin-right: 12px ;
 }
 .footer-form-input::placeholder{
-  font-family: Roboto;
 font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
+line-height: 1.25;
 letter-spacing: 0.03em;
-text-align: left;
 color: 255,255,255,0,6;
-
 }
 .form-icon-footer{
   fill: var(--white);
@@ -814,11 +809,21 @@ color: 255,255,255,0,6;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border:none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   background-color:#FFFFFF;
-  background-image: url(../Image/close\ \(1\).png);
-  background-size: contain;
+  background-size: contain; 
+}
+.icon-close{
+  width: 11px;
+  height: 11px;
+  transition-duration: var(--time-duration);
+  transition-timing-function: var(--timing-function);
+}
+.modal-svg:hover .icon-close,
+.modal-svg:focus .icon-close{
+  fill: var(--accent);
+  
 }
 .form{
   width: 528px;
@@ -893,6 +898,8 @@ color: var( --accent);
 }
 .form-input{
   position: relative;
+  transition-duration: var(--time-duration);
+  transition-timing-function: var(--timing-function);
 }
 .form-icon{
   position: absolute;
@@ -901,6 +908,8 @@ color: var( --accent);
   top: 28px;
   left: 15px;
   transform: translateY(50%);
+  transition-duration: var(--time-duration);
+  transition-timing-function: var(--timing-function);
 }
 .form-input:hover{
   border-color: var(--accent)
