@@ -77,6 +77,8 @@ body {
 
 .site-nav{
   display: inline-flex;
+  margin-left: 93px;
+  
   
 }
 .site-nav :not( :last-child) { 
@@ -911,12 +913,14 @@ color: var( --accent);
   transition-duration: var(--time-duration);
   transition-timing-function: var(--timing-function);
 }
-.form-input:hover{
-  border-color: var(--accent)
+.form-input:focus{
+  border-color: var(--accent);
+  outline: var(--accent);
 }
 
-.form-input:hover + .form-icon {
+.form-input:focus + .form-icon {
   fill: var(--accent);
+  outline: var(--accent);
 }
 .form-icon-mail{
   width: 15px;
@@ -925,4 +929,15 @@ color: var( --accent);
 .form-icon-tel{
   width: 13px;
   height: 13px;
+}
+.checkbox{
+  -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.checkbox-label::before{
+  content: '';
+  width: 15px;
+  height: 16px;
+  background-color:red;
 }
