@@ -861,18 +861,26 @@ color: 255,255,255,0,6;
   
 }
 .form-input{
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
 .conditions{
-  display: inline;
+  display: inline-block;
   padding-right: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+letter-spacing: 0.03em;
+
+color: #757575;
 }
 .form-button{
   text-align: center;
@@ -884,7 +892,7 @@ color: 255,255,255,0,6;
 
 .coment{
   resize: none;
-  padding:12px 16px;
+  padding:13px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -896,7 +904,8 @@ color: 255,255,255,0,6;
   color: rgba(117, 117, 117, 0.5);
   }
 .form-contract{
-color: var( --accent);
+  margin-left: 9px;
+  color: var( --accent);
 }
 .form-input{
   position: relative;
@@ -907,7 +916,7 @@ color: var( --accent);
   position: absolute;
   width: 12px;
   height: 12px;
-  top: 28px;
+  top: 26px;
   left: 15px;
   transform: translateY(50%);
   transition-duration: var(--time-duration);
@@ -934,10 +943,26 @@ color: var( --accent);
   -webkit-appearance:none;
        -moz-appearance:none;
             appearance:none;
+  position: absolute;
 }
-.checkbox-label::before{
-  content: '';
+.checkbox-label{
+  display: flex;
+  align-items: center;
+}
+
+.icon-checked{
+  display: inline-block;
+  margin-right: 9px;
   width: 15px;
   height: 16px;
-  background-color:red;
+  border: 1px solid;
+  border-color: var(--title-text-color);
+  border-radius: 2px;
+}
+.checkbox:checked + .icon-checked{
+  border-color: var(--accent);
+  background-color: var(--accent);
+  background-image: url(../Image/icon\ check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
